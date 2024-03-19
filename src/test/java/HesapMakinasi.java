@@ -30,7 +30,7 @@ public class HesapMakinasi {
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"10.0");
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
 
-        capabilities.setCapability(MobileCapabilityType.APP,"C:\\Users\\ahmet\\IdeaProjects\\Appium_T130\\Apps\\Calculator_8.4 (503542421)_Apkpure (3).apk");
+        capabilities.setCapability(MobileCapabilityType.APP,"C:\\javaProje\\Appium_T130\\Apps\\Calculator_8.6 (612662282)_Apkpure.apk");
         // app capabilities degeri bir uygulamayi yuklemek icin kullanilan degerdir.
         // Bu capability eger ki bir uygulama yukle degilse onu kontrol eder ve yukler eger yuklu ise uygulamainin yuklu olup olmadigini kontrol eder
         // ve yukluyse uygulamayi acar
