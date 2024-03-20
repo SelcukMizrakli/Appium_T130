@@ -22,7 +22,7 @@ public class apkYukleme {
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"10.0");
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
 
-        capabilities.setCapability(MobileCapabilityType.APP,"C:\\javaProje\\Appium_T130\\Apps\\arabam.com_5.1.8_Apkpure.apk");
+        capabilities.setCapability(MobileCapabilityType.APP,"C:\\javaProje\\Appium_T130\\Apps\\Apk Info_2.5.2_apkcombo.com.apk");
         // app capabilities degeri bir uygulamayi yuklemek icin kullanilan degerdir.
         // Bu capability eger ki bir uygulama yukle degilse onu kontrol eder ve yukler eger yuklu ise uygulamainin yuklu olup olmadigini kontrol eder
         // ve yukluyse uygulamayi acar
