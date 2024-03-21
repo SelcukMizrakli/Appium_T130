@@ -55,12 +55,12 @@ public class ArabamAppTest {
         driver.findElementByXPath("//*[@text='İlan Ara']").click();
         // kategori olarak otomobil secilir
         driver.findElementByXPath("//*[@text='Otomobil']").click();
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         // arac olarak Volkswagen secilir
         TouchAction action=new TouchAction<>(driver);
         action
                 .press(PointOption.point(530,1553)) // ekranda kaydirma islemini baslatmak icin belirledigimiz ilk baslangic noktasi
-                .waitAction(WaitOptions.waitOptions(Duration.ofMillis(150)))
+                .waitAction(WaitOptions.waitOptions(Duration.ofMillis(105)))
                 // kaydirma islemi gerceklesirken baslangic noktasi ile (press) ile son (moveTo) arasinda gecen zaman
                 // Eger bu sure arttirilirsa gidilen yol mesafe miktari kisalir yani daha az yol kat ederiz
                 // Eger bu sure azaltilirsa gidilen yol mesafe miktari artar yani daha fazla yol kat etmis oluruz.
@@ -68,13 +68,15 @@ public class ArabamAppTest {
                 .release() // parmagimizi ekrandan kaldirma ve kaydirma islemini sonlandirma
                 .perform(); // verilen action gorevlerini yerine getirme
 
-        // driver.findElementByXPath("//*[@text='Volkswagen']").click();
+        driver.findElementByXPath("//*[@text='Volkswagen']").click();
         // 230 1289
         Thread.sleep(1000);
+        /*
         action.
                 press(PointOption.point(230,1289))
                 .release()
                 .perform();
+        */
         // arac markasi olarak passat secilir
         driver.findElementByXPath("//*[@text='Passat']").click();
         // 1.4 TSI BlueMotion secilir
